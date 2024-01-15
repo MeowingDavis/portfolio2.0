@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davis Lang</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
@@ -13,76 +13,63 @@
     <canvas id="background-canvas"></canvas>
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Interactives</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Documentation</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Reflection</button>
+        <button class="tablinks" onclick="openCity(event, 'London')">About</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Projects</button>
+        <!-- <button class="tablinks" onclick="openCity(event, 'Tokyo')">Contact</button> -->
 
     </div>
 
 
     <div id="London" class="tabcontent">
-        <ul class="projectsList">
-            <li>
-                <h4>Unity</h4>
-            </li>
-            <li><a target="_blank" title="Unity webGl project" href="pages/unity.html">- Twilight City</a></li>
 
-        </ul>
+        <h1>Davis Lang</h1>
+        <section id="BIO">
+            <p> <em>
+                    I'm a passionate multimedia designer from Melbourne,
+                    Australia with a keen interest in exploring the realm of interactivity,
+                    particularly at the crossroads of sound and interaction I am fascinated
+                    by the way immersive auditory
+                    experiences come to life through creations such as games, animations, and web applications.
 
-
-        <ul class="projectsList">
-            <li>
-                <h4>Javascript</h4>
-            </li>
-            <li><a target="_blank" title="Micro Game" href="https://cli-click.deno.dev/">- click click click</a></li>
-            <li><a target="_blank" title="Micro Game" href="https://speed-type.deno.dev/">- How fast can you type</a>
-            </li>
-
-        </ul>
-
-
+                </em></p>
+        </section>
     </div>
 
 
     <div id="Paris" class="tabcontent">
-        <ul class="projectsList">
-            <li><a href="https://drive.google.com/file/d/1yOTWies1B2v_AN03oAt0mXcWed-rEVJp/view?usp=sharing">Assignment 1</a></li>
-            <li>
 
-                <iframe src="https://drive.google.com/file/d/1yOTWies1B2v_AN03oAt0mXcWed-rEVJp/preview" width="100%"
-                    height="480" allow="autoplay"></iframe>
-            </li>
-        </ul>
+        <h3>JavaScript</h3>
         <ul class="projectsList">
-            <li><a href="https://drive.google.com/file/d/1QG0Rwo0gY52hj83Q-NPD8xLicwbJQsbe/view?usp=sharing">Assignment 2</a></li>
             <li>
-                <iframe src="https://drive.google.com/file/d/1QG0Rwo0gY52hj83Q-NPD8xLicwbJQsbe/preview" width="100%"
-                    height="480" allow="autoplay"></iframe>
+                <h5>Micro Games</h5>
+            </li>
+            <li><a target="_self" title="Micro Game" href="https://cli-click.deno.dev/">- click click click</a></li>
+            <li><a target="_self" title="Micro Game" href="https://speed-type.deno.dev/">- How fast can you type</a>
             </li>
 
-        </ul>
-        <ul class="projectsList">
-            <li><a href="https://drive.google.com/file/d/12cmh59ayifN85h8mGd25uLunTK5Hpld-/view?usp=sharing">Assignment 3</a></li>
             <li>
-                <iframe src="https://drive.google.com/file/d/12cmh59ayifN85h8mGd25uLunTK5Hpld-/preview" width="100%"
-                    height="480" allow="autoplay"></iframe>
+                <h5>Website ideas</h5>
             </li>
-
+            <li><a target="_blank" title="Website idea"
+                    href="https://eco-collective.deno.dev/Ecocollective/index.html">- EcoCollective</a></li>
+            <li>
+                <h5>Net art</h5>
+            </li>
+            <li><a target="_blank" title="Net art" href="https://davis-netart.deno.dev/">- Drift</a></li>
         </ul>
+        <h3>Unity</h3>
+        <ul class="projectsList">
+            <li>
+                <h5>Demo</h5>
+            </li>
+            <li><a title="Video Game" href="dangerLine.html">- Twilight City</a></li>
+        </ul>
+
     </div>
 
-    <div id="Tokyo" class="tabcontent">
-  
-        <ul class="projectsList">
-          
-            <li><a href="https://drive.google.com/file/d/1i5biiKIwijNPnQ2Lu2rlPPh_00VMQtfj/view?usp=sharing">Assignment 4</a></li>
-            <li>
+    <!-- <div id="Tokyo" class="tabcontent">
 
-                <iframe src="https://drive.google.com/file/d/1i5biiKIwijNPnQ2Lu2rlPPh_00VMQtfj/preview" width="100%"
-                    height="480" allow="autoplay"></iframe>
-            </li>
-        </ul>
-    </div>
+    </div> -->
 
 
 
@@ -110,6 +97,22 @@
 
         document.querySelector(".tablinks").click(); // Trigger the click event on the first tab
     </script>
+
+
+    <section id="Contact">
+        <h2>Contact Me</h2>
+        <nav id="navBar2">
+            <ul>
+                <li><a title="Send me an email!" href="mailto:davislang808@gmail.com">davislang808@gmail.com</a></li>
+                <li><a href="https://www.instagram.com/no.davis/" style="color: #e1306b">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/davis-lang-933675285/" style="color: #006699">LinkedIn</a>
+                </li>
+                <li><a title="All the code for all my projects is avalable here." href="https://github.com/MeowingDavis"
+                        style="color: #2fbb50">GitHub</a></li>
+            </ul>
+        </nav>
+    </section>
+
 
 </html>
 
