@@ -2,25 +2,32 @@
 body {
     font-family: 'IBM Plex Mono', monospace;
     padding: 5%;
-    background-color: #202124;
-    overflow-x: hidden;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
-    color: #ffffffc0;
+    background-image: url(img/scrape.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    color: #ffffffed;
     margin: 0;
-    
+    overflow-x: hidden; /* Keep horizontal scrolling hidden */
 }
 
 /* Navigation Styles */
 nav {
     text-align: left;
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #333333; /* Adjust background color as needed */
     user-select: none;
+    padding: 10px; /* Add padding for better visibility */
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
 
 nav ul li {
@@ -34,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #333;
+    background: #333333;
     color: #fff;
 }
 
@@ -55,7 +62,7 @@ nav ul li a:hover {
 }
 
 .tab button {
-    background-color: #33333300; /* Set the default background color to match tabcontent */
+    background-color: #33333300;
     float: left;
     border: none;
     outline: none;
@@ -121,6 +128,7 @@ footer {
 @media only screen and (max-width: 600px) {
     nav ul li {
         display: block;
+        margin: 20px;
     }
 
     body {
@@ -129,6 +137,8 @@ footer {
         background-color: #000;
         color: #ffffffc0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
+        overflow-y: auto; /* Enable vertical scrolling */
+        margin-bottom: 60px; /* Adjust the margin to match the height of the navigation */
     }
 }
 
@@ -157,9 +167,19 @@ canvas {
 }
 
 #BIO {
-    max-width: 600px;
+    max-width: 900px;
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
-  }
-  
+    display: flex;
+}
+
+img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#me {
+    display: flex;
+    align-items: center;
+}
