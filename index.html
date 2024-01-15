@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davis Lang</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <canvas id="background-canvas"></canvas>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">Interactives</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Documentation</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Reflection</button>
+
+    </div>
+
+
+    <div id="London" class="tabcontent">
+        <ul class="projectsList">
+            <li>
+                <h4>Unity</h4>
+            </li>
+            <li><a target="_blank" title="Unity webGl project" href="pages/unity.html">- Twilight City</a></li>
+
+        </ul>
+
+
+        <ul class="projectsList">
+            <li>
+                <h4>Javascript</h4>
+            </li>
+            <li><a target="_blank" title="Micro Game" href="https://cli-click.deno.dev/">- click click click</a></li>
+            <li><a target="_blank" title="Micro Game" href="https://speed-type.deno.dev/">- How fast can you type</a>
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+    <div id="Paris" class="tabcontent">
+        <ul class="projectsList">
+            <li><a href="https://drive.google.com/file/d/1yOTWies1B2v_AN03oAt0mXcWed-rEVJp/view?usp=sharing">Assignment 1</a></li>
+            <li>
+
+                <iframe src="https://drive.google.com/file/d/1yOTWies1B2v_AN03oAt0mXcWed-rEVJp/preview" width="100%"
+                    height="480" allow="autoplay"></iframe>
+            </li>
+        </ul>
+        <ul class="projectsList">
+            <li><a href="https://drive.google.com/file/d/1QG0Rwo0gY52hj83Q-NPD8xLicwbJQsbe/view?usp=sharing">Assignment 2</a></li>
+            <li>
+                <iframe src="https://drive.google.com/file/d/1QG0Rwo0gY52hj83Q-NPD8xLicwbJQsbe/preview" width="100%"
+                    height="480" allow="autoplay"></iframe>
+            </li>
+
+        </ul>
+        <ul class="projectsList">
+            <li><a href="https://drive.google.com/file/d/12cmh59ayifN85h8mGd25uLunTK5Hpld-/view?usp=sharing">Assignment 3</a></li>
+            <li>
+                <iframe src="https://drive.google.com/file/d/12cmh59ayifN85h8mGd25uLunTK5Hpld-/preview" width="100%"
+                    height="480" allow="autoplay"></iframe>
+            </li>
+
+        </ul>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+  
+        <ul class="projectsList">
+          
+            <li><a href="https://drive.google.com/file/d/1i5biiKIwijNPnQ2Lu2rlPPh_00VMQtfj/view?usp=sharing">Assignment 4</a></li>
+            <li>
+
+                <iframe src="https://drive.google.com/file/d/1i5biiKIwijNPnQ2Lu2rlPPh_00VMQtfj/preview" width="100%"
+                    height="480" allow="autoplay"></iframe>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.querySelector(".tablinks").click(); // Trigger the click event on the first tab
+    </script>
+
+</html>
+
+
+</body>
+
+</html>

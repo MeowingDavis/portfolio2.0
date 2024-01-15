@@ -1,0 +1,157 @@
+/* Base Styles */
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 5%;
+    background-color: #000;
+    overflow-x: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
+    color: #ffffffc0;
+    margin: 0;
+    
+}
+
+/* Navigation Styles */
+nav {
+    text-align: left;
+    position: relative;
+    user-select: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #e6e6e6;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Background Canvas Styles */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Tab Styles */
+.tab {
+    overflow: hidden;
+    border: 3px solid #ccc;
+    color: honeydew;
+    background: #3333336f;
+}
+
+.tab button {
+    background-color: #33333300; /* Set the default background color to match tabcontent */
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.tab button:hover {
+    background-color: #696969;
+}
+
+.tab button.active {
+    background-color: #484848;
+    color: #ffffff;
+}
+
+/* Tab Content Styles */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 3px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background: #3333336f;
+}
+
+/* Footer Styles */
+footer {
+    text-align: end;
+    color: rgba(240, 248, 255, 0.295);
+}
+
+/* Projects List Styles */
+.projectsList {
+    list-style: none;
+    margin: 10px;
+    padding: 3px;
+}
+
+.projectsList li {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projectsList li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 4px;
+}
+
+.projectsList li a:hover {
+    color: lightgray;
+    background-color: #333;
+    padding: 4px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    nav ul li {
+        display: block;
+    }
+
+    body {
+        font-family: 'IBM Plex Mono', monospace;
+        padding: 5%;
+        background-color: #000;
+        color: #ffffffc0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.856);
+    }
+}
+
+/* Iframe Styles */
+iframe {
+    max-width: 973px;
+    max-height: 547px;
+}
+
+.resizable-iframe {
+    max-width: 973px;
+    max-height: 547px;
+}
+
+/* Additional Styles */
+h5 {
+    padding: 0;
+    margin: 0;
+    color: #f2f2f2;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
